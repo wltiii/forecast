@@ -61,7 +61,7 @@ Below is a list of technologies used in the development of Forecast.
 * DropWizard 0.7.1
 * Gradle 2.0
 
-=== Getting Started ===
+== Getting Started ==
 Install the following tools if you do not already have them:
 
  . If you don't have already, install Java (see the Technology Stack section for
@@ -74,7 +74,7 @@ Install the following tools if you do not already have them:
  . Clone the activity, forecast and suggestion projects in your projects home directory. Be
    sure to read and perform any additional setup as outlined in the related project's
    README Getting Started section.
- . Navigate into the project directory, for exampe [projects home]/forecast.
+ . Navigate into the project directory, for example [projects home]/forecast.
  . Change the settings in `forecast.yml` and `test-forecast.yml` to have your application run on a
    port your choosing.
  . Run command `gradle build`.
@@ -95,7 +95,7 @@ for IntelliJ IDEA. You are strongly encouraged to run `gradle tasks` for a list 
 targets.
 
 
-=== Disclaimer ===
+== Disclaimer ==
 Not having access to a user nor analyst is not a natural condition. There were conflicting
 or unclear requirements that needed resolution. Also, other design choices would
 have been made having someone available.
