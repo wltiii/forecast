@@ -1,0 +1,9 @@
+= TODOs
+Bill Turner
+
+== Considerations for Future Releases ==
+* Add calls to other weather services
+** Aggregate/average or provide value ranges
+** Create common response if existing does not work properly
+** Use enterprise integration (e.g. Apache Camel) for improved performance
+* Add in basic authorization

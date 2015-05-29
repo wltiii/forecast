@@ -12,6 +12,9 @@ apply plugin: 'eclipse'
 apply plugin: 'groovy'
 apply plugin: 'java'
 apply plugin: 'eu.appsatori.fatjar'
+apply plugin: 'application'
+
+mainClassName = 'forecast.ForecastApplication'
 
 repositories {
 	mavenLocal()
@@ -63,6 +66,10 @@ fatJar {
 	exclude 'META-INF/*.DSA'
 	exclude 'META-INF/*.RSA'
 	manifest {
-		attributes 'Main-Class': 'forecast.ForecastApplication'
+		attributes 'Main-Class': mainClassName
 	}
+}
+
+run {
+    args 'server', 'forecast.yml'
 }
