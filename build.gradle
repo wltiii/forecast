@@ -58,6 +58,7 @@ dependencies {
 	compile group: yammerDropWizardGroup, name: 'dropwizard-testing', version: yammerDropWizardTestingVersion
 	compile group: jerseyGroup, name: 'jersey-client', version: jerseyVersion
 	compile group: httpBuilderGroup, name: 'http-builder', version: httpBuilderVersion
+    testCompile group: spockGroup, name: 'spock-core', version: spockVersion
 	testCompile group: equalsverifierGroup, name: 'equalsverifier', version: equalsverifierVersion
 }
 
@@ -71,5 +72,5 @@ fatJar {
 }
 
 run {
-    args 'server', 'forecast.yml'
+    args 'server', 'test-forecast.yml'
 }

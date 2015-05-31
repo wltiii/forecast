@@ -69,21 +69,22 @@ Install the following tools if you do not already have them:
  . Install GVM (see http://gvmtool.net/) if it is available for your OS, then use it
    to install Groovy and Gradle. Alternatively, search the web for installation instructions.
  . Install git (see https://git-scm.com/).
- . Create an account at Weather Underground (wundergroun -- http://www.wunderground.com/weather/api/d/docs?d=index)
-   and enter the apikey setting in `forecast.yml` and `test-forecast.yml`.
+ . Create an account at Weather Underground (wunderground -- http://www.wunderground.com/weather/api/d/docs?d=index)
+   and enter the apikey setting in `src/main/resources/forecast/serviceadapter/test-wunderground.properties`.
  . Clone the activity, forecast and suggestion projects in your projects home directory. Be
    sure to read and perform any additional setup as outlined in the related project's
    README Getting Started section.
  . Navigate into the project directory, for example [projects home]/forecast.
- . Change the settings in `forecast.yml` and `test-forecast.yml` to have your application run on a
-   port your choosing.
+// . Change the settings in `forecast.yml` and `test-forecast.yml` to have your application run on a
+//   port your choosing.
  . Run command `gradle build`.
  . Run command `gradle fatJar`.
  . Run command `gradle run`.
  . Once all three of the services have been started -- activity, forecast and
    suggestion -- you can verify installation by navigating your web browser to
-   `http://localhost:9002/forecast/states/CA/cities/San_Francisco`, being sure
-   to use your port settings, if changed.
+   `http://localhost:9002/forecast/states/CA/cities/San_Francisco`.
+
+// being sure to use your port settings, if changed.
 
 
 
@@ -114,4 +115,3 @@ other endpoints.
 include::STYLE_GUIDE.asciidoc[]
 
 include::TODO.asciidoc[]
-
